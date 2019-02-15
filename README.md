@@ -36,8 +36,18 @@ sudo pip3 install -U virtualenv  # system-wide install
 ```
 virtualenv --system-site-packages -p python3 ./tfgpu
 source ./tfgpu/bin/activate  # sh, bash, ksh, or zsh
-pip install tensorflow-gpu
-pip install keras
+pip install tensorflow-gpu==1.1.0
+pip install keras==2.0.8 
 ```
-tensorflow-gpu                         1.1.0   
-keras 2.0.8 
+## Increase Console Mode Resolution
+
+These lines are inserted to /etc/default/grub:
+```
+GRUB_GFXMODE=1024x768x32
+GRUB_GFXPAYLOAD_LINUX=keep
+
+```
+Then run
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
