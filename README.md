@@ -1,4 +1,4 @@
-# Ubuntu-16.04-Tensorflow-Setup-Guide
+# Ubuntu 16.04 Tensorflow Setup Guide
 # Tensorflow GPU Linux Install
 - Ubuntu 16.04 bootable usb stick
 - Disable nouveau
@@ -39,3 +39,5 @@ source ./tfgpu/bin/activate  # sh, bash, ksh, or zsh
 pip install tensorflow-gpu
 pip install keras
 ```
+tensorflow-gpu                         1.1.0   
+keras 2.0.8 
